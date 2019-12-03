@@ -171,7 +171,7 @@ def main(directory, password):
 	
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
-	parser.add_argument('password', help='Password for MySQL root user')
 	parser.add_argument('file_directory', help='Directory where files are located')
+	parser.add_argument('--password', help='Password for MySQL root user', required=False)
 	args = parser.parse_args()
 	main(args.file_directory, args.password)
