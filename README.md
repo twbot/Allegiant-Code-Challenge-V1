@@ -10,8 +10,9 @@ In order to run, make sure python3.7 is installed, install mysql-connector-pytho
 If not already installed, pip install argparse & csv.
 
 The script requires a password and the directory where the mapping/data csv files are located.
-Simply run `python3 loadData.py [password] ./datamap` where password is the password for root user of MySQL connection.
+Simply run `python3 loadData.py ./datamap [password]` where password is the password for root user of MySQL connection.
+*Password is an optional argument in the case that no password is required for root
 
 ## Web Service/JS Engineering & UI/UX Challenge Setup
 Ensure node is installed on your machine, then run `npm i` within the code-challenge directory.
-After all required packages are installed, run `node server.js [password]` where password is the password for root user of MySQL connection.
+After all required packages are installed, run `node server.js [password]` where password is the password for root user of MySQL connection. If no password, run `node server.js`.
