@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Customers App - G4 JS Challenge</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="./stylesheets/style.css" rel="stylesheet">
+
+  <script type="text/javascript" src="./logic/index.js"></script>
+</head>
+<body>
+
+<div class="container-fluid bg-3 text-center">
+  <div class="app">
+    <div class="content" action="/customer_data" method="GET">
+      <div class="page-submissions">
+      <div class="head">
+        <table class="header-container">
+          <tbody>
+            <tr class="header-row">
+              <td>Name</td>
+              <td>Email</td>
+              <td>Coordinates</td>
+              <td>IP Address</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="submissions">
+        <table class="table-container">
+          <tbody class="table-body">
+            <% customers.forEach(function(customer) { %>
+                <tr class="table-row body">
+                  <td>
+                  <a href="/dashboard/<%= customer.id %>"><%= customer.first_name %> <%= customer.last_name %></a>
+                  </td>
+                  <td><%= customer.email %></td>
+                  <td>(<%= customer.latitude %>, <%= customer.longitude %>)</td>
+                  <td><%= customer.ip %></td>
+                </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

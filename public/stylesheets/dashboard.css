@@ -1,0 +1,408 @@
+@media screen
+and (max-width: 1023px)
+{
+	.dash {
+		position: relative;
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+		min-height: 200px;
+		height: auto;
+	}
+	.card-same {
+		width: 100%;
+		height: 300px;
+	}
+}
+
+@media screen 
+and (min-width: 1024px)
+and (max-width: 1195px)
+{
+	.dash {
+		position: relative;
+		width: 80%;
+		margin-right: 10%;
+		margin-left: 10%;
+		min-height: 200px;
+		height: auto;
+	}
+	.card-same {
+		width: 100%;
+		height: 300px;
+	}
+}
+
+@media screen 
+and (min-width: 1196px)
+and (max-width: 1366px)
+{
+	.dash {
+		position: relative;
+		width: 70%;
+		margin-right: 15%;
+		margin-left: 15%;
+		min-height: 200px;
+		height: auto;
+	}
+	.card-same {
+		width: 49%;
+		height: 300px;
+	}
+}
+
+@media screen 
+and (min-width: 1367px)
+and (max-width: 1643px)
+{
+	.dash {
+		position: relative;
+		width: 60%;
+		margin-right: 20%;
+		margin-left: 20%;
+		min-height: 200px;
+		height: auto;
+	}
+	.card-same {
+		width: 49%;
+		height: 300px;
+	}
+}
+
+@media screen 
+and (min-width: 1644px)
+and (max-width: 1920px)
+{
+	.dash {
+		position: relative;
+		width: 60%;
+		margin-right: 20%;
+		margin-left: 20%;
+		min-height: 200px;
+		height: auto;
+	}
+	.card-same {
+		width: 49%;
+		height: 300px;
+	}
+}
+
+@media screen 
+and (min-width: 1921px)
+and (max-width: 2560px)
+{
+	.dash {
+		position: relative;
+		width: 50%;
+		margin-right: 25%;
+		margin-left: 25%;
+		min-height: 200px;
+		height: auto;
+	}
+	.card-same {
+		width: 49%;
+		height: 300px;
+	}
+}
+
+@media screen 
+and (min-width: 2561px)
+{
+	.dash {
+		position: relative;
+		width: 50%;
+		margin-right: 25%;
+		margin-left: 25%;
+		min-height: 200px;
+		height: auto;
+	}
+	.card-same {
+		width: 49%;
+		height: 300px;
+	}
+}
+
+.content {
+	margin-top: 50px;
+}
+
+.card-home:hover  {
+    box-shadow: 0 10px 25px  #101010;
+    -webkit-box-shadow:0 10px 25px  #101010;
+    -moz-box-shadow: 0 10px 25px  #101010;
+    transition: .5s ease;
+}
+
+.card-home:hover .fa-bell{
+	box-shadow: 0 2px 5px  #101010;
+    -webkit-box-shadow:0 2px 5px  #101010;
+    -moz-box-shadow: 0 2px 5px  #101010;
+    transition: .5s ease;
+}
+
+.card-home {
+	position: relative;
+	display: inline-block;
+	cursor: default;
+	vertical-align: top;
+	overflow: hidden;
+	box-shadow: 0 5px 10px  #101010;
+	-webkit-box-shadow: 0 5px 10px  #101010;
+    -moz-box-shadow: 0 5px 10px  #101010;
+    transition: .5s ease;
+    cursor: default;
+}
+
+h1 {
+	text-align: center;
+	color: #505050;
+	font-size: 45px;
+	font-family: 'Roboto', Georgia, sans-serif;
+}
+
+h2 {
+	text-align: center;
+	color: #505050;
+	font-size: 35px;
+	font-family: 'Roboto', Georgia, sans-serif;
+}
+
+.card-same:nth-child(2n){
+	margin-left: 1%;
+}
+
+.button-div {
+	text-align: center;
+	vertical-align: middle;
+}
+
+button {
+	margin-top: 15%;
+	height: 80px;
+	width: 80px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: #505050;
+	font-size: 20px;
+	font-family: 'Roboto', Georgia, sans-serif;
+}
+
+.card-sm, .card-md, .card-lg, .card-same{
+	background-color: #606060;
+	position: relative;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	overflow: hidden;
+	cursor: default;
+	vertical-align: top;
+    box-shadow: 0 5px 10px  #101010;
+	-webkit-box-shadow: 0 5px 10px  #101010;
+    -moz-box-shadow: 0 5px 10px  #101010;
+    transition: .5s ease;
+}
+
+.tile-header {
+	width: 100%;
+	height: 65px;
+	border: 1px solid transparent;
+}
+
+.tile-body{
+    width: 100%;
+    height: 235px;
+    border: 1px solid transparent;
+}
+
+.tile-header > h3 {
+	vertical-align: middle;
+}
+
+.tile-body > p {
+	vertical-align: middle;
+}
+
+.center-card-head {
+	margin-top: 10px;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+	font-family: 'Roboto', Georgia, sans-serif;
+}
+
+.center-card-head-md {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 25px;
+	color: #fff;
+	font-family: 'Roboto', Georgia, sans-serif;
+}
+
+.center-card-text {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.break{ 
+	background-color: #FD9500;
+}
+
+.expand-content {
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.expand-content > *{
+	font-family: 'Roboto', Georgia, sans-serif;
+    color: #fff;
+    overflow-wrap: break-word;
+}
+
+.announcements{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.announcements h1 {
+	color: #FD9500;
+}
+
+.card {
+	box-shadow: 0 9px 10px  #000;
+	-webkit-box-shadow: 0 9px 15px  #000;
+    -moz-box-shadow: 0 9px 15px  #000;
+    transition: .5s ease;
+    vertical-align: top;
+    overflow: hidden;
+	cursor: pointer;
+	height: 200px;
+	margin-right: 1%;
+	margin-top: 10px; 
+	margin-bottom: 20px; 
+	display: inline-block;
+	border-radius: 6px;
+}
+
+.card-sm {
+	background-color: #606060;
+	width: 39%;
+	color: #FD9500;
+	/*border: 1px solid green;*/
+}
+
+.card-md {
+	background-color: #606060;
+	width: 58%;
+	color:#FD9500;
+}
+
+.card-lg {
+	background-color: #606060;
+	width: 99%;
+	color: #FD9500;
+}
+
+.card:hover  {
+	box-shadow: 0 3px 15px #000;
+    -webkit-box-shadow:0 3px 15px  #000;
+    -moz-box-shadow: 0 3px 15px  #000;
+    transition: .5s ease;
+}
+
+hr {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	background-color: #C0C0C0;
+	margin-bottom: 0;
+}
+
+.card-panel {
+	position: relative;
+	display: block;
+	overflow-y: auto;
+	top:0;
+	height: 66%;
+}
+
+.account-panel {
+	position: relative;
+	display: block;
+	overflow-y: hidden;
+	top:0;
+	height: 72%;
+}
+
+.card h3 {
+	color: #FD9500;
+	font-family: 'Roboto', Georgia, sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.card p {
+	color: #fff;
+	font-family: 'Roboto', Georgia, sans-serif;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.account {
+	display: block;
+	margin: 8px auto;
+	border-radius: 50%;
+	height: 90%;
+}
+
+.backButton {
+	background-color: #606060;
+	border-radius: 50%;
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	right: 5%;
+	bottom: 5%;
+	border: 1px solid #fff;
+}
+
+.backText {
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Roboto', Georgia, sans-serif;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #656565;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}

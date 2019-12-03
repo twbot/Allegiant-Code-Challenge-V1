@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Customers Dashboard - G4 JS Challenge</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="../stylesheets/dashboard.css" rel="stylesheet">
+
+  <script type="text/javascript" src="./logic/index.js"></script>
+</head>
+
+  <body>
+    <h1>Customer Dashboard:</h1>
+    <h2><%= customer.first_name %>  <%= customer.last_name %></h2>
+    <div class="content">
+      <div class="dash">
+        <div class="card-home card-same">
+              <div class="tile-header">
+                <h3 class="center-card-head">Profile</h3>
+                <hr class="break">
+              </div>
+              <div class="tile-body">
+                <div class="expand-content">
+                  <div class="button-div">
+                    <button><a href="/profile/<%= customer.id %>">View</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-home card-same">
+              <div class="tile-header">
+                <h3 class="center-card-head">Announcements</h3>
+                <hr class="break">
+              </div>
+              <div class="tile-body">
+                <div class="expand-content">
+                </div>
+              </div>
+            </div>
+
+            <div class="card-home card-same">
+              <div class="tile-header">
+                <h3 class="center-card-head-md">Slack Updates</h3>
+                <hr class="break">
+              </div>
+              <div class="tile-body">
+                <div class="expand-content">
+                  <div class="announcements">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-home card-same">
+              <div class="tile-header">
+                <h3 class="center-card-head-md">Notifications</h3>
+                <hr class="break">
+              </div>
+              <div class="tile-body">
+                <div class="expand-content">
+                  <div class="announcements">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      </div>
+      <div *ngIf="!this.authService.loggedIn">
+      </div>
+    </div>
+    <a href="/" class="backButton"><p class="backText">Back</p></a>
+  </body>
+</html>

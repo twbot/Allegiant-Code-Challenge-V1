@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Customers App - G4 JS Challenge</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!--  <link rel="icon" type="image/x-icon" href="assets/img/Terbine_logo_square2.png" id="light-scheme-icon">
+    <link rel="icon" type="image/x-icon" href="assets/img/Terbine_logo_square_whiteonblack.png" id="dark-scheme-icon"> -->
+
+    <!--Stylesheets-->
+    <link href="./assets/index.css" rel="stylesheet">
+
+    <!--Scripts-->
+    <script type="text/javascript" src="./logic/index.js"></script>
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="content">
+        <div class="page-submissions">
+          <div class="head">
+            <table class="header-container">
+              <tbody>
+                <tr class="header-row">
+                  <td>Name</td>
+                  <td>Date Added</td>
+                  <td>Review Status</td>
+                  <td>Searcher</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        <div class="submissions">
+          <table class="table-container" *ngIf="loaded">
+            <tbody class="table-body">
+              <tr class="table-row body" *ngFor="let review of reviews; let i = index" (onmouseenter)="viewClickOptions(i)" (onmouseleave)="notViewClickOptions()">
+                <td>
+                {{review.metadata.meta.name}}
+                </td>
+                <td>{{review.createDate | date:'MM/dd/yyyy'}}</td>
+                <td *ngIf="!(viewOptions == i)">{{status[review.reviewStatus-1]}}</td>
+                <td *ngIf="!(viewOptions == i)">{{review.submitterFirstName}}</td>
+                <td (click)="onClick(i)" *ngIf="viewOptions == i" class="viewMetadata">
+                  Review
+                </td>
+                <td (click)="onViewClones(i)" *ngIf="viewOptions == i && viewCloneDetails" class="cloneView">
+                  View Clones
+                </td>
+                <td (click)="onViewClones(i)" *ngIf="viewOptions == i && !viewCloneDetails" class="noCloneView">
+                  No Clones
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
